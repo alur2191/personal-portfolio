@@ -1,0 +1,15 @@
+@import '../../styles/globals.scss';
+
+.container {
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 100px;
+	align-items: center;
+	i {
+		font-size: 18px;
+	}
+}

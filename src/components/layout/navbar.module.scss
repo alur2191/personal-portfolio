@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	justify-content: flex-end;
+	padding: 40px 100px;
+	z-index: 11;
+
+	ul {
+		display: flex;
+		gap: 25px;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

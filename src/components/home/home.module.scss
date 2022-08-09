@@ -1,0 +1,35 @@
+@import '../../styles/globals.scss';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 15px;
+	font-size: 1.4rem;
+	margin: 80px auto 0 auto;
+	min-width: 280px;
+	overflow: hidden;
+	width: 100%;
+	@include for-tablet-up {
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin: 130px 0 0 130px;
+		height: 100%;
+	}
+	:nth-child(2) {
+		font-size: 2.8rem;
+	}
+	span {
+		z-index: 10;
+	}
+	a {
+		margin-top: 40px;
+		font-size: 1.2rem;
+		width: 120px;
+		transition-duration: .3s;
+		&:hover {
+			color: white;
+		}
+	}
+}

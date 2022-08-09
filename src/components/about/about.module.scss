@@ -1,0 +1,64 @@
+@import '../../styles/globals.scss';
+
+.container {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	text-align: center;
+	gap: 50px;
+	max-width: 600px;
+	margin: 20px 20px 100px 20px;
+	@include for-tablet-up {
+		display: grid;
+		text-align: start;
+		align-items: flex-start;
+		text-align: flex-start;
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 760px;
+		margin: 60px auto 100px auto;
+	}
+
+	.tech {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		@include for-tablet-up {
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		>div {
+			>div {
+				display: flex;
+				gap: 10px;
+				
+				img {
+					height: 40px;
+					-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  				filter: grayscale(100%);
+					
+				}
+				:hover{
+					-webkit-filter: grayscale(0%); 
+					filter: grayscale(0%);
+				}
+				.iconContainer {
+					position: relative;
+					span {
+						display: none;
+						position: absolute;
+						left: 0px;
+						bottom: -15px;
+					}
+				}
+			}
+		}
+	}
+
+	:last-child {
+		h1 {
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
+	}
+}
