@@ -59,6 +59,7 @@
 			margin: 0 10px;
 			@include for-tablet-up {
 				margin: 0;
+				text-align: start;
 			}
 			h1 {
 				display: none;
