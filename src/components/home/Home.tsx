@@ -34,12 +34,12 @@ function Home() {
 			footer.style.backgroundColor = 'transparent' 
 		}
 
-		if(darkTheme &&  footer){
-			document.body.style.backgroundColor = 'black'
+		if(darkTheme && footer){
+			document.body.style.backgroundColor = '#1b1a1a'
 			document.body.style.color = 'white'
 		}else if(footer){
 			
-			document.body.style.color = 'black'
+			document.body.style.color = '#1b1a1a'
 		}
 		
   }, [darkTheme,x ,y]);
@@ -49,7 +49,7 @@ function Home() {
 	}
 
 	const pageChange = () => {
-		document.body.style.color = 'black'
+		document.body.style.color = '#1b1a1a'
 		dispatch(invertTheme());
 	}
   return (

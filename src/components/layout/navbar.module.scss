@@ -1,8 +1,15 @@
+@import '../../styles/globals.scss';
+
 .container {
 	display: flex;
-	justify-content: flex-end;
-	padding: 40px 100px;
-	z-index: 11;
+	justify-content: center;
+	padding: 20px 0;
+
+	@include for-tablet-up {
+		flex-direction: row;
+		justify-content: flex-end;
+		padding: 40px 100px;
+	}
 
 	ul {
 		display: flex;

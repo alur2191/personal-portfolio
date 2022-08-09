@@ -145,9 +145,9 @@ function Portfolio() {
 				</div>
 			</motion.div>
 			<div className={styles.navigation}>
-				<div className={styles.navButton}><i className="las la-angle-left"></i><span onClick={previousProject}>previous</span></div>
-				<div style={{display: 'flex', alignItems:'center', gap: 5}}><i className="las la-bars"></i><h3>{projects[id].title}</h3></div>
-				<div  className={styles.navButton}><span onClick={nextProject}>next</span><i className="las la-angle-right"></i></div>
+				<div className={styles.navButton} onClick={previousProject}><i className="las la-angle-left"></i><span>previous</span></div>
+				<div className={styles.navTitle}><i className="las la-bars"></i><h3>{projects[id].title}</h3></div>
+				<div  className={styles.navButton} onClick={nextProject}><span >next</span><i className="las la-angle-right"></i></div>
 			</div>
     </div>
   );

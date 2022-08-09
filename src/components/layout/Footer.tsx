@@ -4,7 +4,20 @@ function Footer() {
 
   return (
     <footer id='footer' className={styles.container}>
-			<div style={{display:'flex', gap: 20}}><a href=""><i className="las la-file-alt"></i>Resume</a><a><i className="las la-at"></i>akmalu21@gmail.com</a><a><i className="lab la-linkedin"></i></a><a href="https://www.linkedin.com"><i className="lab la-github"></i></a></div>
+			<ul>
+				<li>
+					<a href="/resume.pdf"><i className="las la-file-alt"></i><span>Resume</span></a>
+				</li>
+				<li>
+					<a href='mailto:akmalu21@gmail.com'><i className="las la-at"></i>Email</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com"><i className="lab la-linkedin"></i></a>
+				</li>
+				<li>
+					<a href="https://www.github.com/dandavisjs"><i className="lab la-github"></i></a>
+				</li>
+			</ul>
     </footer>
   );
 }
