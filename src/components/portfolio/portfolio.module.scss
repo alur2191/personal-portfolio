@@ -79,7 +79,7 @@
 	}
 	.navigation {
 		margin-bottom: 10px;
-		margin: 0 20px;
+		margin: 0 20px;                                                         
 		display: flex;
 		justify-content: space-between;
 		-webkit-touch-callout: none; /* iOS Safari */
@@ -89,25 +89,16 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+		@include for-tablet-up {
+			margin-bottom: 100px;
+		}
 		a {
 			text-decoration: none;
 		}
 		.navTitle{
-			text-align: center;
-			i {
-				display: none;
-			}
-			
-			@include for-tablet-up {
-				margin-bottom: 100px;
-				display: flex;
-				align-items: center;
-				gap: 5;
-				i {
-					
-					display: inline;
-				}
-			}
+			position: relative;
+			display: flex;
+			flex-direction: column;
 		}
 		.navButton {
 			font-size: 20px;

@@ -43,11 +43,11 @@ function Portfolio() {
 			title: 'UnderdogDevs',
 			type: 'Contributor',
 			tools: ['Next.js', 'TypeScript', 'Context', 'PostgreSQL', 'Prisma ORM'],
-			about: 'Founded in September of 2020, is a group of software developers supporting the formerly incarcerated & disadvantaged in their transition into the software industry.',
+			about: 'Group of software developers supporting the formerly incarcerated & disadvantaged in their transition into the software industry.',
 			work: 'Contributed to development of the content management administrator panel and the client side of the blog section.',
 			image: '/image/portfolio/logo/underdog-devs.png',
 			link: 'https://www.underdogdevs.org/',
-			git: 'https://github.com/Underdog-Devs/website-v2',
+			git: 'https://github.com/U                                                                                                       nderdog-Devs/website-v2',
 			backend: 'https://github.com/Underdog-Devs/website-admin'
 		},
 		{
@@ -114,7 +114,7 @@ function Portfolio() {
 				exit={{x: navForward ? 100 : -100, opacity:0}}
 				transition={{
 					ease: 'anticipate',
-					duration: 0.6
+					duration: 0.3
 				}}
 			>
 				<div className={styles.preview}>
@@ -146,7 +146,13 @@ function Portfolio() {
 			</motion.div>
 			<div className={styles.navigation}>
 				<div className={styles.navButton} onClick={previousProject}><i className="las la-angle-left"></i><span>previous</span></div>
-				<div className={styles.navTitle}><i className="las la-bars"></i><h3>{projects[id].title}</h3></div>
+				< motion.h3 initial={{x: navForward ? -20 : 20, opacity:0}}
+				animate={{x: 0, opacity:1}}
+				exit={{x: navForward ? 20 : -20, opacity:0}}
+				transition={{
+					ease: 'anticipate',
+					duration: 0.3
+				}} >{projects[id].title}</ motion.h3>
 				<div  className={styles.navButton} onClick={nextProject}><span >next</span><i className="las la-angle-right"></i></div>
 			</div>
     </div>

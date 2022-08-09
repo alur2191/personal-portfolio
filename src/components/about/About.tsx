@@ -24,21 +24,34 @@ function About() {
     <motion.div className={styles.container} 
 		initial={{opacity: 0}}
 		animate={{opacity: 1}}
-		exit={{opacity: 0}}>
-			<div className={styles.tech}>
+		exit={{opacity: 0}}
+		transition={{duration:0.3}}>
+			<div className={styles.tech}
+			>
 				<h1>TECH EXPERIENCE</h1>
-				<div>
+				<motion.div
+					initial={{opacity: 0}}
+					animate={{opacity: 1}}
+					exit={{opacity: 0}}
+					transition={{delay:0.3}}
+				>
 					<span>Frontend:</span>
-					<div>
-						<img src='/image/icons/javascript.png' />
+					<div
+					>
+						<img src='/image/icons/javascript.png' alt="some"/>
 						<img src='/image/icons/typescript.png' />
 						<img src='/image/icons/react.png' />
 						<img src='/image/icons/nextjs.png' />
 						<img src='/image/icons/html.png' />
 						<img src='/image/icons/css.png' />
 					</div>
-				</div>
-				<div>
+				</motion.div>
+				<motion.div
+					initial={{opacity: 0}}
+					animate={{opacity: 1}}
+					exit={{opacity: 0}}
+					transition={{delay:0.4}}
+				>
 					<span>Backend:</span>
 					<div>
 						<img src='/image/icons/nodejs.png' />
@@ -47,8 +60,13 @@ function About() {
 						<img src='/image/icons/mysql.png' />
 						<img src='/image/icons/mongo.png' />
 					</div>
-				</div>
-				<div>
+				</motion.div>
+				<motion.div
+					initial={{opacity: 0}}
+					animate={{opacity: 1}}
+					exit={{opacity: 0}}
+					transition={{delay:0.5}}
+				>
 					<span>Tools:</span>
 					<div>
 						<img src='/image/icons/github.png' />
@@ -57,12 +75,18 @@ function About() {
 						<img src='/image/icons/photoshop.png' />
 						<img src='/image/icons/aftereffects.png' />
 					</div>
-				</div>
+				</motion.div>
 			</div>
 			<div>
 				<h1>About Me</h1>
-				<p>Self-taught graphic design for some years, after which decided to start learning programming. After a couple of years of self-teaching JavaScript, I was accepted to the <a href="https://www.underdogdevs.org/">Underdog Devs</a> stipend program.</p>
-				<p>Besides my main focus, fullstack web applications, I've been interested in different areas of tech and programming and continuesly seek to expand my horizons. I have experimented with Web3, Three.js, and Flutter for mobile development.</p>
+				<motion.div
+					initial={{opacity: 0}}
+					animate={{opacity: 1}}
+					exit={{opacity: 0}}
+					transition={{delay:0.3}}>
+					<p>Self-taught graphic design for some years, after which decided to start learning programming. After a couple of years of self-teaching JavaScript, I was accepted to the <a href="https://www.underdogdevs.org/">Underdog Devs</a> stipend program.</p>
+					<p>Besides my main focus, fullstack web applications, I've been interested in different areas of tech and programming and continuesly seek to expand my horizons. I have experimented with Web3, Three.js, and Flutter for mobile development.</p>
+				</motion.div>
 			</div>
     </motion.div>
   );
