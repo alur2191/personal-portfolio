@@ -85,7 +85,7 @@ function About() {
 					exit={{opacity: 0}}
 					transition={{delay:0.3}}>
 					<p>Self-taught graphic design for some years, after which decided to start learning programming. After a couple of years of self-teaching JavaScript, I was accepted to the <a href="https://www.underdogdevs.org/">Underdog Devs</a> stipend program.</p>
-					<p>Besides my main focus, fullstack web applications, I've been interested in different areas of tech and programming and continuesly seek to expand my horizons. I have experimented with Web3, Three.js, and Flutter for mobile development.</p>
+					<p>Besides my main focus, fullstack web applications, I've been interested in different areas of tech and programming and continuously seek to expand my horizons. I have experimented with Web3, Three.js, and Flutter for mobile development.</p>
 				</motion.div>
 			</div>
     </motion.div>
