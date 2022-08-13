@@ -35,7 +35,7 @@ function Portfolio() {
 			about: 'Platform where users can create and share learning curriculum.',
 			work: 'Collaborated and led development of a fullstack web application. Pre-development stages included; wireframes, database schema diagrams, mockups, and planning.',
 			image: '/image/portfolio/logo/learning-path.png',
-			link: 'http://www.google.com',
+			link: '',
 			git: 'https://github.com/Grantb2134/LearningPath',
 			backend: '',
 		},
@@ -47,7 +47,7 @@ function Portfolio() {
 			work: 'Contributed to development of the content management administrator panel and the client side of the blog section.',
 			image: '/image/portfolio/logo/underdog-devs.png',
 			link: 'https://www.underdogdevs.org/',
-			git: 'https://github.com/U                                                                                                       nderdog-Devs/website-v2',
+			git: 'https://github.com/Underdog-Devs/website-v2',
 			backend: 'https://github.com/Underdog-Devs/website-admin'
 		},
 		{
@@ -66,7 +66,7 @@ function Portfolio() {
 			type: 'Personal Project',
 			tools: ['React.js', 'Context'],
 			about: 'Lightweight live cryptocurrency price charts.',
-			work: 'React application with Context API for state management. Data is fetched from CoinGecko API and visualized using a library called Recharts.',
+			work: 'React application with Context API for state management. Data is fetched from CoinGecko API and visualized with Recharts.',
 			image: '/image/portfolio/logo/crypto-charts.png',
 			link: 'https://quirky-volhard-399428.netlify.app/',
 			git: 'https://github.com/dandavisjs/CryptoCharts',
@@ -75,7 +75,7 @@ function Portfolio() {
 		{
 			title: 'Russo Brothers Transportation',
 			type: 'Contractual Job',
-			tools: ['Next.js', 'Context', 'PostgreSQL', 'Prisma ORM'],
+			tools: ['HTML', 'CSS', 'JavaScript'],
 			about: 'Russo Brothers Transport Inc is a freight transportation logistics company based in Sacramento, CA. ',
 			work: 'Created brand design guidelines and developed a static website based on the guidelines.',
 			image: '/image/portfolio/logo/russo-transport.png',
@@ -86,9 +86,9 @@ function Portfolio() {
 		{
 			title: 'SafeBooks.finance',
 			type: 'Contractual Job',
-			tools: ['Next.js', 'Context', 'PostgreSQL', 'Prisma ORM'],
-			about: 'Full set of bookkeeping and accounting services to various industries.',
-			work: '',
+			tools: ['HTML', 'CSS', 'JavaScript'],
+			about: 'Full set of bookkeeping and accounting services.',
+			work: 'Designed mockups for a small business and developed a static website. Deployed on a cPanel hosting.',
 			image: '/image/portfolio/logo/safebooks.png',
 			link: 'http://www.safebooks.finance',
 			git: 'https://github.com/dandavisjs/Bookkeeping-Website',
@@ -120,7 +120,7 @@ function Portfolio() {
 				<div className={styles.preview}>
 					<img src={projects[id].image} alt="TruckDriver.help logo" />
 					<div className={styles.links}>
-						<div><i className="las la-2x la-globe"></i><a  href={projects[id].link} target="_blank" rel="noopener noreferrer">View Live</a></div>
+						{projects[id].link && <div><i className="las la-2x la-globe"></i><a  href={projects[id].link} target="_blank" rel="noopener noreferrer">View Live</a></div>}
 						{projects[id].backend
 						? <>
 								<div><i className="lab la-2x la-github"></i><a href={projects[id].git} target="_blank" rel="noopener noreferrer">Client Repository</a></div>
