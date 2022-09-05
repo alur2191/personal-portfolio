@@ -1,5 +1,5 @@
 import styles from './portfolio.module.scss'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useSelector, TypedUseSelectorHook, useDispatch } from 'react-redux';
 import { store } from '../../app/store';
 import {motion} from 'framer-motion'
@@ -25,6 +25,11 @@ function Portfolio() {
 			document.body.style.backgroundColor = 'white';
 			footer.style.backgroundColor = 'white';
 		}
+		setTimeout(()=>{
+			if(document.body.style.color !== '#1b1a1a'){
+				document.body.style.color = '#1b1a1a'
+			}
+		},500)
   }, []);
 
 	const projects = [
