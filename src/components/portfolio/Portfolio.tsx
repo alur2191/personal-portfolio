@@ -40,7 +40,7 @@ function Portfolio() {
 			about: 'Platform where users can create and share learning curriculum.',
 			work: 'Collaborated and led development of a fullstack web application. Pre-development stages included; planning, wireframes, database schema diagrams, mockups, linting with a pre-commit hook and pull request template.',
 			image: '/image/portfolio/logo/learning-path.png',
-			link: '',
+			link: 'http://34.234.173.82/',
 			git: 'https://github.com/Grantb2134/LearningPath',
 			backend: '',
 		},
