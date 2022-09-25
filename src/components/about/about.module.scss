@@ -13,13 +13,14 @@
 		text-align: start;
 		align-items: flex-start;
 		text-align: flex-start;
-		grid-template-columns: repeat(2, 1fr);
+		
 		max-width: 760px;
 		margin: 60px auto 100px auto;
 	}
 
 	.tech {
 		display: flex;
+		position: fixed;
 		flex-direction: column;
 		align-items: center;
 		gap: 30px;
@@ -53,6 +54,11 @@
 				}
 			}
 		}
+	}
+
+	.about {
+		margin-left: 400px;
+		width: 400px;
 	}
 
 	:last-child {

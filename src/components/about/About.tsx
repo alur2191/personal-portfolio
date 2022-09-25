@@ -20,15 +20,33 @@ function About() {
 			footer.style.backgroundColor = 'white';
 		}
   }, []);
+
+	const tech = {
+		languages: ["JavaScript", "TypeScript", "Python", "Swift"],
+		backend: ["Node.js", "Express.js", "JWT", "Bcryptjs", "Prisma ORM", "Sequelize ORM", "SQLAlchemy"],
+		database: ["MySQL", "PostgreSQL", "MongoDB", "GraphQL" ],
+		frontend: ["Redux + Toolkit", "HTML", "CSS", "SASS", "Styled Components"],
+		frameworks: ["React.js", "Next.js", "Flask"],
+		deployment: ["AWS", "RDS", "EC2", "Lambda", "Heroku", "Netlify", "Vercel"],
+		other: ["Git", "GitHub Projects", "Trello", "Agile", "Three.js", "Solidity", "Figma", "Photoshop"]
+	}
+
   return (
     <motion.div className={styles.container} 
 		initial={{opacity: 0}}
 		animate={{opacity: 1}}
 		exit={{opacity: 0}}
 		transition={{duration:0.3}}>
-			<div className={styles.tech}
-			>
+			<div className={styles.tech}>
 				<h1>TECH EXPERIENCE</h1>
+				<motion.div
+					initial={{opacity: 0}}
+					animate={{opacity: 1}}
+					exit={{opacity: 0}}
+					transition={{delay:0.3}}
+				>
+					
+				</motion.div>
 				<motion.div
 					initial={{opacity: 0}}
 					animate={{opacity: 1}}
@@ -77,7 +95,7 @@ function About() {
 					</div>
 				</motion.div>
 			</div>
-			<div>
+			<div className={styles.about}>
 				<h1>About Me</h1>
 				<motion.div
 					initial={{opacity: 0}}
