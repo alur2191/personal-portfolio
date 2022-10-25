@@ -102,7 +102,7 @@ function About() {
 					animate={{opacity: 1}}
 					exit={{opacity: 0}}
 					transition={{delay:0.3}}>
-					<p>4-years of self-taught Software Engineer. Passionate about building fullstack web and mobile applications. I keep myself busy by participating in various collaborative projects, constantly working on self-improvement, and daily pair programming with senior software engineers with experience working in Google, Apple, Squarespace, Slack, etc. References are available upon request.</p>
+					<p>4-years of self-taught Software Engineer. Passionate about building fullstack web and mobile applications. I keep myself busy by participating in various collaborative projects, constantly working on self-improvement, and daily pair programming with senior software engineers with experience working at Google, Apple, Squarespace, Slack, etc. References are available upon request.</p>
 					<p>3 years of experience working with frontend tech - Vanilla JS, React.js, Next.js, Redux (inc. Toolkit), SASS, Styled Components, BEM, Bootstrap, etc. Several years of experience working with HTML, CSS, and various graphic design software prior to software engineering experience.</p>
 					<p>2 years of experience with backend, databases, and deployment - Node.js, Express.js, BE Validation, PostgreSQL, MySQL, MongoDB, AWS, Vercel, Heroku etc.</p>
 					<p>
