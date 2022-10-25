@@ -59,7 +59,7 @@ function Portfolio() {
 			title: 'TruckDriver.help',
 			type: 'Personal Project',
 			tools: ['Next.js', 'Context', 'PostgreSQL', 'Prisma ORM', 'Google Analytics', 'Vercel', 'AWS RDS'],
-			about: 'Platform for immigrants from CIS countries working in the freight transportation logistics industry. Hundred of active users a few month into its recent launch.',
+			about: 'Platform for immigrants from CIS countries working in the freight transportation logistics industry. Hundreds of active users a few month into its recent launch.',
 			work: 'Fullstack Next.js server-side rendering web application. Deployed on vercel, and integrated various external services: traffic analysis with Google Analytics, log management with LogTail, and sending emails with SendGrid.',
 			image: '/image/portfolio/logo/truckdriverhelp.png',
 			link: 'http://www.truckdriver.help',
