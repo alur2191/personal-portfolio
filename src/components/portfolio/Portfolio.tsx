@@ -63,7 +63,7 @@ function Portfolio() {
 			work: 'Fullstack Next.js server-side rendering web application. Deployed on vercel, and integrated various external services: traffic analysis with Google Analytics, log management with LogTail, and sending emails with SendGrid.',
 			image: '/image/portfolio/logo/truckdriverhelp.png',
 			link: 'http://www.truckdriver.help',
-			git: 'https://github.com/dandavisjs/TruckDriver.Help',
+			git: 'https://github.com/alur2191/TruckDriver.Help',
 			backend: '',
 		},
 		{
@@ -74,7 +74,7 @@ function Portfolio() {
 			work: 'React application with Context API for state management. Data is fetched from CoinGecko API and visualized with Recharts.',
 			image: '/image/portfolio/logo/crypto-charts.png',
 			link: 'https://quirky-volhard-399428.netlify.app/',
-			git: 'https://github.com/dandavisjs/CryptoCharts',
+			git: 'https://github.com/alur2191/CryptoCharts',
 			backend: '',
 		},
 		{
@@ -85,7 +85,7 @@ function Portfolio() {
 			work: 'Created brand design guidelines and developed a static website based on the guidelines.',
 			image: '/image/portfolio/logo/russo-transport.png',
 			link: 'http://www.russotransport.com',
-			git: 'https://github.com/dandavisjs/RussoBrotherTransport',
+			git: 'https://github.com/alur2191/RussoBrotherTransport',
 			backend: '',
 		},
 		{
@@ -96,7 +96,7 @@ function Portfolio() {
 			work: 'Designed mockups for a small business and developed a static website. Deployed on a cPanel hosting.',
 			image: '/image/portfolio/logo/safebooks.png',
 			link: 'http://www.safebooks.finance',
-			git: 'https://github.com/dandavisjs/Bookkeeping-Website',
+			git: 'https://github.com/alur2191/Bookkeeping-Website',
 			backend: '',
 		},
 	]
