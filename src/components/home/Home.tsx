@@ -60,7 +60,7 @@ function Home() {
 			transition={{duration:0.3}}
 		>
 			<Circles />
-			<span>Akmal Urunboev</span>
+			<span>Al Urunboev</span>
 			<span>Software Engineer</span>
 			<Link to='/portfolio/0' className={styles.button}
 			onClick={pageChange} onMouseOver={onButtonHover} onMouseLeave={()=>setDarkTheme(!darkTheme)}>View Portfolio</Link>
