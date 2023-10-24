@@ -34,70 +34,34 @@ function Portfolio() {
 
 	const projects = [
 		{
-			title: 'LearningPath',
-			type: 'Personal Project',
-			tools: ['React.js', 'Redux Toolkit', 'Express.js', ' MySQL', 'Sequelize'],
-			about: 'Platform where users can create and share learning curriculum.',
-			work: 'Collaborated and led development of a fullstack web application. Pre-development stage included the following: planning, wireframes, database schema diagrams, mockups, linting with a pre-commit hook and pull request template.',
-			image: '/image/portfolio/logo/learning-path.png',
-			link: 'http://34.234.173.82/',
-			git: 'https://github.com/Grantb2134/LearningPath',
-			backend: '',
+			title: 'CDL School Dashboard',
+			type: 'Web App',
+			tools: ['Next.js 13', 'Supabase', 'Twilio'],
+			about: 'CDL School Dashboard bridges student drivers with CDL schools via dedicated phone lines and offers institutions comprehensive call oversight and profile editing capabilities.',
+			work: 'Developed a full-stack dashboard connecting student drivers to CDL schools. Implemented a unique telephone-based system, assigning each school a dedicated forwarding number. Enhanced school oversight with call history tracking. Integrated features for institutions to modify their profile data seamlessly.',
+			image: '/image/portfolio/logo/cdl-help-logo.webp',
+			link: 'https://school.cdlhelp.app/',
+			git: 'https://github.com/alur2191/CDL-School-Panel',
 		},
 		{
-			title: 'UnderdogDevs',
-			type: 'Contributor',
-			tools: ['Next.js', 'TypeScript', 'Context', 'PostgreSQL', 'Prisma ORM'],
-			about: 'Group of software developers supporting the formerly incarcerated & disadvantaged in their transition into the software industry.',
-			work: 'Contributed to development of the server-side rendering content management administrator panel and the client side of the blog section.',
-			image: '/image/portfolio/logo/underdog-devs.png',
-			link: 'https://www.underdogdevs.org/',
-			git: 'https://github.com/Underdog-Devs/website-v2',
-			backend: 'https://github.com/Underdog-Devs/website-admin'
+			title: 'CDL Help ',
+			type: 'Mobile Application',
+			tools: ['Flutter', 'Provider', 'Firebase Analytics'],
+			about: 'A mobile app designed for immigrants, facilitating CDL exam preparation at the DMV and bolstering their English language proficiency.',
+			work: 'Developed a mobile application using Flutter targeting immigrants for CDL exam readiness at the DMV. Incorporated bilingual tools to support English language enhancement. Curated and integrated a library of resources for those pursuing truck driving careers. Ensured user-friendly design and intuitive navigation for efficient exam practice and information access.',
+			link: 'https://www.dmvhelp.app/',
+			image: '/image/portfolio/logo/cdl-help-logo.webp',
+			// git: 'https://github.com/Underdog-Devs/website-v2',
 		},
 		{
-			title: 'TruckDriver.help',
-			type: 'Personal Project',
-			tools: ['Next.js', 'Context', 'PostgreSQL', 'Prisma ORM', 'Google Analytics', 'Vercel', 'AWS RDS'],
-			about: 'Platform for immigrants from CIS countries working in the freight transportation logistics industry. Hundreds of active users a few month into its recent launch.',
-			work: 'Fullstack Next.js server-side rendering web application. Deployed on vercel, and integrated various external services: traffic analysis with Google Analytics, log management with LogTail, and sending emails with SendGrid.',
-			image: '/image/portfolio/logo/truckdriverhelp.png',
-			link: 'http://www.truckdriver.help',
-			git: 'https://github.com/alur2191/TruckDriver.Help',
-			backend: '',
-		},
-		{
-			title: 'Cryptocurrency Charts',
-			type: 'Personal Project',
-			tools: ['React.js', 'Context'],
-			about: 'Lightweight live cryptocurrency price charts.',
-			work: 'React application with Context API for state management. Data is fetched from CoinGecko API and visualized with Recharts.',
-			image: '/image/portfolio/logo/crypto-charts.png',
-			link: 'https://quirky-volhard-399428.netlify.app/',
-			git: 'https://github.com/alur2191/CryptoCharts',
-			backend: '',
-		},
-		{
-			title: 'Russo Brothers Transportation',
-			type: 'Contractual Job',
-			tools: ['HTML', 'CSS', 'JavaScript'],
-			about: 'Russo Brothers Transport Inc is a freight transportation logistics company based in Sacramento, CA. ',
-			work: 'Created brand design guidelines and developed a static website based on the guidelines.',
-			image: '/image/portfolio/logo/russo-transport.png',
-			link: 'http://www.russotransport.com',
-			git: 'https://github.com/alur2191/RussoBrotherTransport',
-			backend: '',
-		},
-		{
-			title: 'SafeBooks.finance',
-			type: 'Contractual Job',
-			tools: ['HTML', 'CSS', 'JavaScript'],
-			about: 'Full set of bookkeeping and accounting services.',
-			work: 'Designed mockups for a small business and developed a static website. Deployed on a cPanel hosting.',
-			image: '/image/portfolio/logo/safebooks.png',
-			link: 'http://www.safebooks.finance',
-			git: 'https://github.com/alur2191/Bookkeeping-Website',
-			backend: '',
+			title: 'DMV Help',
+			type: 'Mobile Application',
+			tools: ['Flutter', 'Provider', 'Firebase Analytics'],
+			about: 'DMV Help is a mobile application designed to assist immigrants in preparing for the DMV, while simultaneously aiding in their English language proficiency.',
+			work: 'Crafted a user-centric mobile application using Flutter to aid immigrants in DMV preparation. Integrated bilingual support to enhance English language learning. Implemented features for interactive test practice and feedback. Leveraged multimedia content to provide comprehensive guidance on DMV regulations and processes.',
+			image: '/image/portfolio/logo/dmv-help-logo.webp',
+			link: 'http://www.DMVhelp.app',
+			// git: 'https://github.com/alur2191/TruckDriver.Help',
 		},
 	]
 	
@@ -126,13 +90,7 @@ function Portfolio() {
 					<img src={projects[id].image} alt="TruckDriver.help logo" />
 					<div className={styles.links}>
 						{projects[id].link && <div><i className="las la-2x la-globe"></i><a  href={projects[id].link} target="_blank" rel="noopener noreferrer">View Live</a></div>}
-						{projects[id].backend
-						? <>
-								<div><i className="lab la-2x la-github"></i><a href={projects[id].git} target="_blank" rel="noopener noreferrer">Client Repository</a></div>
-								<div><i className="lab la-2x la-github"></i><a href={projects[id].backend}  target="_blank" rel="noopener noreferrer">Admin Repository</a></div>
-							</>
-						: <div><i className="lab la-2x la-github"></i><a href={projects[id].git}  target="_blank" rel="noopener noreferrer">Github</a></div>
-						}
+						{projects[id].git&&<div><i className="lab la-2x la-github"></i><a href={projects[id].git}  target="_blank" rel="noopener noreferrer">Github</a></div>}
 					</div>
 				</div>
 				<div className={styles.details}>

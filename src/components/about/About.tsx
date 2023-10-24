@@ -53,15 +53,16 @@ function About() {
 					exit={{opacity: 0}}
 					transition={{delay:0.3}}
 				>
-					<span>Frontend:</span>
+					<h3 style={{marginBottom: 10}}>Languages:</h3>
 					<div
 					>
-						<img src='/image/icons/javascript.png' alt="some"/>
-						<img src='/image/icons/typescript.png' />
-						<img src='/image/icons/react.png' />
-						<img src='/image/icons/nextjs.png' />
-						<img src='/image/icons/html.png' />
-						<img src='/image/icons/css.png' />
+						<ul style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', columnGap: 50, rowGap: 20}}>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>Dart</li>
+							<li>Go</li>
+						</ul>
+						
 					</div>
 				</motion.div>
 				<motion.div
@@ -70,13 +71,15 @@ function About() {
 					exit={{opacity: 0}}
 					transition={{delay:0.4}}
 				>
-					<span>Backend:</span>
-					<div>
-						<img src='/image/icons/nodejs.png' />
-						<img src='/image/icons/python.png' />
-						<img src='/image/icons/postgresql.png' />
-						<img src='/image/icons/mysql.png' />
-						<img src='/image/icons/mongo.png' />
+					<h3 style={{marginBottom: 10}}>Frameworks:</h3>
+					<div
+					>
+						<ul style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', columnGap: 50, rowGap: 20}}>
+							<li>React.js</li>
+							<li>Next.js</li>
+							<li>Flutter</li>
+						</ul>
+						
 					</div>
 				</motion.div>
 				<motion.div
@@ -85,13 +88,35 @@ function About() {
 					exit={{opacity: 0}}
 					transition={{delay:0.5}}
 				>
-					<span>Tools:</span>
-					<div>
-						<img src='/image/icons/github.png' />
-						<img src='/image/icons/trello.png' />
-						<img src='/image/icons/figma.png' />
-						<img src='/image/icons/photoshop.png' />
-						<img src='/image/icons/aftereffects.png' />
+					<h3 style={{marginBottom: 10}}>Backend:</h3>
+					<div
+					>
+						<ul style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', columnGap: 50, rowGap: 20}}>
+							<li>Node.js</li>
+							<li>Express.js</li>
+							<li>Go</li>
+						</ul>
+						
+					</div>
+				</motion.div>
+				<motion.div
+					initial={{opacity: 0}}
+					animate={{opacity: 1}}
+					exit={{opacity: 0}}
+					transition={{delay:0.6}}
+				>
+					<h3 style={{marginBottom: 10}}>Database:</h3>
+					<div
+					>
+						<ul style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', columnGap: 50, rowGap: 20}}>
+							<li>MySQL</li>
+							<li>PostgreSQL</li>
+							<li>MongoDB</li>
+							<li>Firebase</li>
+							<li>Supabase</li>
+							<li>Prisma ORM</li>
+						</ul>
+						
 					</div>
 				</motion.div>
 			</div>
@@ -102,12 +127,14 @@ function About() {
 					animate={{opacity: 1}}
 					exit={{opacity: 0}}
 					transition={{delay:0.3}}>
-					<p>4-years of self-taught Software Engineer. Passionate about building fullstack web and mobile applications. I keep myself busy by participating in various collaborative projects, constantly working on self-improvement, and daily pair programming with senior software engineers with experience working at Google, Apple, Squarespace, Slack, etc. References are available upon request.</p>
-					<p>3 years of experience working with frontend tech - Vanilla JS, React.js, Next.js, Redux (inc. Toolkit), SASS, Styled Components, BEM, Bootstrap, etc. Several years of experience working with HTML, CSS, and various graphic design software prior to software engineering experience.</p>
-					<p>2 years of experience with backend, databases, and deployment - Node.js, Express.js, BE Validation, PostgreSQL, MySQL, MongoDB, AWS, Vercel, Heroku etc.</p>
-					<p>
-					Familiarity with Python, Swift, React Native, Flutter, Solidity, Three.js, and various other frameworks and libraries.
-					</p>
+					<p>I'm a software engineer fueled by a passion for solving complex problems and optimizing workflows. My journey in the tech world has been rich and varied. Initially, my intrigue with the digital domain was channeled through graphic design, mastering the intricacies of visual communication and storytelling.</p>
+
+<p>From there, my path led me to web development, beginning with the foundational elements of the internet: HTML and CSS. I relished the challenge of crafting functional, aesthetic websites and soon embraced the capabilities of CMS platforms like WordPress. As I ventured deeper into the realm of software engineering, I expanded my expertise to encompass frameworks such as React.js and Next.js, and complemented this front-end prowess with backend mastery using tools like Node.js, Express.js, and databases including MySQL, PostgreSQL, and MongoDB.</p>
+
+<p>The allure of the mobile world was impossible to resist. Although I initially dabbled with React Native, it was the Dart programming language and Flutter framework that truly captivated me. This led to the transformation of a personal project into a comprehensive mobile application. More recently, my curiosity has steered me towards the Go programming language, with an aim to sculpt even more robust and efficient backend architectures.</p>
+
+<p>But at the heart of all these technical pursuits is an unyielding desire to identify challenges, delve deep into their core, and architect innovative solutions. My adventures in technology are not confined to any singular domain. Whether it's automating intricate tasks with Python scripts or harnessing the expansive offerings of AWS, I remain an avid explorer, continually seeking to merge creativity with technology and bring groundbreaking solutions to the fore.</p>
+
 				</motion.div>
 			</div>
     </motion.div>

@@ -22,7 +22,10 @@
 		position: relative;
 		flex-direction: column;
 		align-items: center;
-		gap: 30px;
+		gap: 10px;
+		div {
+			margin-bottom: 10px;
+		}
 		@include for-desktop-up {
 			align-items: flex-start;
 			justify-content: flex-start;
