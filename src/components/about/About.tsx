@@ -112,9 +112,9 @@ function About() {
 							<li>MySQL</li>
 							<li>PostgreSQL</li>
 							<li>MongoDB</li>
-							<li>Firebase</li>
-							<li>Supabase</li>
 							<li>Prisma ORM</li>
+							<li>Supabase</li>
+							<li>Firebase</li>
 						</ul>
 						
 					</div>

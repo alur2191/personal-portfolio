@@ -108,7 +108,7 @@ function Portfolio() {
 				</div>
 			</motion.div>
 			<div className={styles.navigation}>
-				<div className={styles.navButton} onClick={previousProject}><i className="las la-angle-left"></i><span>previous</span></div>
+				<div className={styles.navButton} onClick={previousProject}><div className={styles.circle}></div><i className="las la-angle-left"></i><span>previous</span></div>
 				< motion.h3 initial={{x: navForward ? -20 : 20, opacity:0}}
 				animate={{x: 0, opacity:1}}
 				exit={{x: navForward ? 20 : -20, opacity:0}}
@@ -116,7 +116,7 @@ function Portfolio() {
 					ease: 'anticipate',
 					duration: 0.3
 				}} >{projects[id].title}</ motion.h3>
-				<div  className={styles.navButton} onClick={nextProject}><span >next</span><i className="las la-angle-right"></i></div>
+				<div className={styles.navButton} onClick={nextProject}><div className={styles.circle}></div><span className={styles.nextText}>next</span><i className="las la-angle-right"></i></div>
 			</div>
     </div>
   );
