@@ -36,7 +36,7 @@ function Portfolio() {
 		{
 			title: 'CDL School Dashboard',
 			type: 'Web App',
-			tools: ['Next.js 13', 'Supabase', 'Twilio'],
+			tools: ['Next.js 13', 'Supabase', 'PostgreSQL', 'Twilio'],
 			about: 'CDL School Dashboard bridges student drivers with CDL schools via dedicated phone lines and offers institutions comprehensive call oversight and profile editing capabilities.',
 			work: 'Developed a full-stack dashboard connecting student drivers to CDL schools. Implemented a unique telephone-based system, assigning each school a dedicated forwarding number. Enhanced school oversight with call history tracking. Integrated features for institutions to modify their profile data seamlessly.',
 			image: '/image/portfolio/logo/cdl-help-logo.webp',
@@ -51,7 +51,6 @@ function Portfolio() {
 			work: 'Developed a mobile application using Flutter targeting immigrants for CDL exam readiness at the DMV. Incorporated bilingual tools to support English language enhancement. Curated and integrated a library of resources for those pursuing truck driving careers. Ensured user-friendly design and intuitive navigation for efficient exam practice and information access.',
 			link: 'https://www.dmvhelp.app/',
 			image: '/image/portfolio/logo/cdl-help-logo.webp',
-			// git: 'https://github.com/Underdog-Devs/website-v2',
 		},
 		{
 			title: 'DMV Help',
@@ -61,7 +60,6 @@ function Portfolio() {
 			work: 'Crafted a user-centric mobile application using Flutter to aid immigrants in DMV preparation. Integrated bilingual support to enhance English language learning. Implemented features for interactive test practice and feedback. Leveraged multimedia content to provide comprehensive guidance on DMV regulations and processes.',
 			image: '/image/portfolio/logo/dmv-help-logo.webp',
 			link: 'http://www.DMVhelp.app',
-			// git: 'https://github.com/alur2191/TruckDriver.Help',
 		},
 	]
 	
@@ -96,10 +94,11 @@ function Portfolio() {
 				<div className={styles.details}>
 					<h1>{projects[id].title}</h1>
 					<p><em>{projects[id].type}</em></p>
-					<div className={styles.tools}><strong>Tech: </strong>
+					<div className={styles.tools}>
+						<strong>Tech: </strong>
 							{projects[id].tools.map((tool,i)=>{
 								return(
-									<><span key={id}>{tool}</span><span className={styles.divider}> | </span></>
+									<span key={i}>{tool}</span>
 								)
 							})}
 					</div>

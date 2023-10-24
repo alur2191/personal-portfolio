@@ -12,10 +12,8 @@ function Navbar() {
 	};
 	useEffect(()=>{
 		if(location.pathname === '/'){
-			console.log('home');
 			document.body.style.overflow = 'hidden';
 		}else{
-			console.log('not home');
 			setTimeout(()=>{
 				document.body.style.overflow = 'auto';
 			},350)

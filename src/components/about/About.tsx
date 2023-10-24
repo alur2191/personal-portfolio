@@ -21,16 +21,6 @@ function About() {
 		}
   }, []);
 
-	const tech = {
-		languages: ["JavaScript", "TypeScript", "Python", "Swift"],
-		backend: ["Node.js", "Express.js", "JWT", "Bcryptjs", "Prisma ORM", "Sequelize ORM", "SQLAlchemy"],
-		database: ["MySQL", "PostgreSQL", "MongoDB", "GraphQL" ],
-		frontend: ["Redux + Toolkit", "HTML", "CSS", "SASS", "Styled Components"],
-		frameworks: ["React.js", "Next.js", "Flask"],
-		deployment: ["AWS", "RDS", "EC2", "Lambda", "Heroku", "Netlify", "Vercel"],
-		other: ["Git", "GitHub Projects", "Trello", "Agile", "Three.js", "Solidity", "Figma", "Photoshop"]
-	}
-
   return (
     <motion.div className={styles.container} 
 		initial={{opacity: 0}}
